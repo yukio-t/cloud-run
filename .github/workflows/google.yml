@@ -1,6 +1,6 @@
 name: Deploy
 
-on: 
+on:
   push:
     branches:
       - main
@@ -16,8 +16,8 @@ jobs:
   deploy-to-cloud-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@master
 
       - name: Setup gcloud
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
