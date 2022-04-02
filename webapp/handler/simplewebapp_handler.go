@@ -10,7 +10,7 @@ type SimpleWebHandler struct {
 }
 
 func (sh SimpleWebHandler) Index(c echo.Context) error {
-	return c.String(http.StatusOK, "Hello, Worlds!\n")
+	return c.String(http.StatusOK, "Hello, World!!!!!\n")
 }
 
 func (sh SimpleWebHandler) Ping(c echo.Context) error {
